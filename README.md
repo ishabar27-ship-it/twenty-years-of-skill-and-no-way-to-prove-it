@@ -73,6 +73,10 @@ A future where every skilled worker has a way to showcase their abilities and re
 | 2392608092 | Isha Bar |
 
 **Team Code:** 2392608084 — CODEZEN
+
+APP ARCHITECTURE
+
+
 <img width="1718" height="1502" alt="mermaid-diagram (3)" src="https://github.com/user-attachments/assets/1b49a6bd-7f18-40d5-a92c-c407e5965e73" />
 FLOW CHART
 ### `01` Entry Point
@@ -191,10 +195,13 @@ The exact workflow depends on the hosting setup and the services implemented in 
 
 > **Implementation note:** The current Shramik prototype uses React, TypeScript, Tailwind CSS, Vite, Express, and Gemini integration. PostgreSQL, Prisma, JWT authentication, Redis, and background-job processing should be listed as planned until they are implemented and tested. Exact dependency versions can be documented from the project's `package.json` files.
 >
+> COMPONENT INTERACTION FLOW 
 > <img width="4310" height="5474" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/a2269dcd-2c8a-4060-b65e-73f3598afb85" />
 >
+> FRONTEND ARCHITECTURE FLOW
 > <img width="3786" height="2590" alt="mermaid-diagram (2)" src="https://github.com/user-attachments/assets/9a2c1c64-81cc-4d46-bee7-7ef376f86d51" />
 
+BACKEND  ARCHITECTURE FLOW
 <img width="5638" height="1958" alt="mermaid-diagram (4)" src="https://github.com/user-attachments/assets/89b952d5-544c-4326-bef9-e1f1fc1c131f" />
 
 ## Backend Components (Detailed)
@@ -302,147 +309,12 @@ These models and files are a suggested design, not confirmation that they alread
 
 Shramik's current prototype uses React, TypeScript, Tailwind CSS, Vite, Express, and Gemini integration. The routes, services, database models, authentication middleware, and background jobs listed above describe the intended backend architecture and should be marked as implemented only after they have been built and tested.
 
-shramik/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-├── README.md
-├── .gitignore
-├── .env.example
-├── package.json
-├── index.html
-├── vite.config.ts
-├── tsconfig.json
-├── postcss.config.js
-├── tailwind.config.ts
-│
-├── backend/
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── nodemon.json
-│   ├── prisma/
-│   │   ├── schema.prisma
-│   │   └── migrations/
-│   └── src/
-│       ├── index.ts
-│       ├── database/
-│       │   ├── workerQueries.ts
-│       │   ├── customerQueries.ts
-│       │   ├── bookingQueries.ts
-│       │   ├── jobQueries.ts
-│       │   └── reviewQueries.ts
-│       ├── helpers/
-│       │   ├── passwordHelper.ts
-│       │   ├── responseHelper.ts
-│       │   └── tokenHelper.ts
-│       ├── middleware/
-│       │   ├── auth.ts
-│       │   └── errorHandler.ts
-│       ├── routes/
-│       │   ├── auth.ts
-│       │   ├── workers.ts
-│       │   ├── customers.ts
-│       │   ├── bookings.ts
-│       │   ├── jobs.ts
-│       │   ├── reviews.ts
-│       │   ├── locations.ts
-│       │   └── chat.ts
-│       ├── services/
-│       │   ├── authService.ts
-│       │   ├── workerService.ts
-│       │   ├── customerService.ts
-│       │   ├── bookingService.ts
-│       │   ├── jobService.ts
-│       │   └── chatService.ts
-│       └── utils/
-│           ├── prisma.ts
-│           ├── validation.ts
-│           ├── dateUtils.ts
-│           ├── locationUtils.ts
-│           └── notificationUtils.ts
-│
-├── frontend/
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── vite.config.ts
-│   ├── index.html
-│   ├── public/
-│   │   ├── favicon.svg
-│   │   ├── icon-192x192.png
-│   │   ├── icon-512x512.png
-│   │   └── images/
-│   │       ├── logo.svg
-│   │       ├── hero-workers.png
-│   │       └── shramik-background.jpg
-│   └── src/
-│       ├── main.tsx
-│       ├── App.tsx
-│       ├── index.css
-│       ├── components/
-│       │   ├── index.ts
-│       │   ├── layout/
-│       │   │   ├── Header.tsx
-│       │   │   ├── Footer.tsx
-│       │   │   └── LanguageSwitcher.tsx
-│       │   ├── worker/
-│       │   │   ├── WorkerCard.tsx
-│       │   │   ├── WorkerProfile.tsx
-│       │   │   ├── WorkerFilters.tsx
-│       │   │   └── AvailabilitySlots.tsx
-│       │   ├── customer/
-│       │   │   ├── SearchWorkers.tsx
-│       │   │   ├── BookingForm.tsx
-│       │   │   └── BookingConfirmation.tsx
-│       │   ├── dashboard/
-│       │   │   ├── WorkerDashboard.tsx
-│       │   │   ├── CustomerDashboard.tsx
-│       │   │   ├── BookingList.tsx
-│       │   │   └── JobList.tsx
-│       │   ├── chat/
-│       │   │   └── ShramikSahayak.tsx
-│       │   └── ui/
-│       │       ├── Button.tsx
-│       │       ├── Input.tsx
-│       │       ├── Modal.tsx
-│       │       ├── LoadingSpinner.tsx
-│       │       └── ErrorMessage.tsx
-│       ├── pages/
-│       │   ├── Welcome.tsx
-│       │   ├── LanguageSelection.tsx
-│       │   ├── RoleSelection.tsx
-│       │   ├── FindWorkers.tsx
-│       │   ├── FindJobs.tsx
-│       │   ├── WorkerProfilePage.tsx
-│       │   ├── Bookings.tsx
-│       │   └── Profile.tsx
-│       ├── hooks/
-│       │   ├── useAuth.ts
-│       │   ├── useWorkers.ts
-│       │   ├── useBookings.ts
-│       │   └── useLanguage.ts
-│       ├── services/
-│       │   ├── apiClient.ts
-│       │   ├── authService.ts
-│       │   ├── workerService.ts
-│       │   ├── bookingService.ts
-│       │   └── chatService.ts
-│       ├── types/
-│       │   ├── auth.ts
-│       │   ├── worker.ts
-│       │   ├── customer.ts
-│       │   ├── booking.ts
-│       │   └── index.ts
-│       └── utils/
-│           ├── constants.ts
-│           ├── validation.ts
-│           ├── formatters.ts
-│           ├── translations.ts
-│           └── storage.ts
-│
-└── docs/
-    ├── project-overview.md
-    ├── architecture.md
-    └── api-documentation.md
+
+│<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/69b72a29-bee1-4747-92f1-005d41921b17" />
+
+
+
+
 
     ## API Reference
 
