@@ -7,7 +7,7 @@ Team CODEZEN
 | USN | Team Member |
 |---|---|
 | 2392608227 | Maanya Ashchary |
-| 2392608072 | Somya Sarkar |
+| 2392608072 | Soumya Sarkar |
 | 2392608084 | Samriddhi Rathore |
 | 2392608182 | Princy Suman |
 | 2392608278 | Shagun Sagar |
