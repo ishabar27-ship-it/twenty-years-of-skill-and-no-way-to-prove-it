@@ -1,5 +1,19 @@
-# twenty-years-of-skill-and-no-way-to-prove-it
+# Twenty-years-of-skill-and-no-way-to-prove-it
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2fdd67ed-7d62-4b5c-8ed8-9a3e642d13c6" />
+Team CODEZEN
+
+**Team Leader:** Samriddhi Rathore
+
+| USN | Team Member |
+|---|---|
+| 2392608227 | Maanya Ashchary |
+| 2392608072 | Somya Sarkar |
+| 2392608084 | Samriddhi Rathore |
+| 2392608182 | Princy Suman |
+| 2392608278 | Shagun Sagar |
+| 2392608092 | Isha Bar |
+
+**Team Code:** 2392608084 — CODEZEN
 
 *Shramik — Skill • Work • Trust*  Shramik helps skilled workers showcase their skills, record completed jobs, and build trust through shareable digital profiles and QR codes.  *Our Mission:* To help every skilled worker prove their experience, gain recognition, and access better opportunities.  Every skill deserves recognition.
 # Twenty-years-of-skill-and-no-way-to-prove-it.
@@ -59,20 +73,7 @@ A future where every skilled worker has a way to showcase their abilities and re
 
 **Shramik — Every skill deserves recognition. 🧡**
 
-## 8. Team CODEZEN
 
-**Team Leader:** Samriddhi Rathore
-
-| USN | Team Member |
-|---|---|
-| 2392608227 | Maanya Ashchary |
-| 2392608072 | Somya Sarkar |
-| 2392608084 | Samriddhi Rathore |
-| 2392608182 | Princy Suman |
-| 2392608278 | Shagun Sagar |
-| 2392608092 | Isha Bar |
-
-**Team Code:** 2392608084 — CODEZEN
 
 APP ARCHITECTURE
 
